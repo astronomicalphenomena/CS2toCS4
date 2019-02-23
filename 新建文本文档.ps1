@@ -1,0 +1,1 @@
+(Get-ChildItem)|ForEach-Object {Rename-Item -Path $_.Name -NewName  $_.Name.toLower();}

@@ -1,0 +1,37 @@
+{
+  "multipart": [
+    {"apply": {"model": "#_post"}},
+    {
+      "when": {"north": true},
+      "apply": {"model": "#_side"}
+    },
+    {
+      "when": {"east": true},
+      "apply": {"model": "#_side", "y": 90}
+    },
+    {
+      "when": {"south": true},
+      "apply": {"model": "#_side_alt"}
+    },
+    {
+      "when": {"west": true},
+      "apply": {"model": "#_side_alt", "y": 90}
+    },
+    {
+      "when": {"north": false},
+      "apply": {"model": "#_noside"}
+    },
+    {
+      "when": {"east": false},
+      "apply": {"model": "#_noside_alt"}
+    },
+    {
+      "when": {"south": false},
+      "apply": {"model": "#_noside_alt", "y": 90}
+    },
+    {
+      "when": {"west": false},
+      "apply": {"model": "#_noside", "y": 270}
+    }
+  ]
+}
